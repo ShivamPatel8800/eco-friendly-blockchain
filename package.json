@@ -1,0 +1,24 @@
+{
+  "name": "eco-friendly-blockchain",
+  "version": "2.0.0",
+  "description": "Eco-Friendly Consensus Mechanism with multi-validator voting and token staking",
+  "scripts": {
+    "compile":  "hardhat compile",
+    "deploy":   "hardhat run scripts/deploy.ts",
+    "verify":   "hardhat run scripts/verify.ts",
+    "test":     "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "clean":    "hardhat clean && rm -f deployment.json"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox":  "^5.0.0",
+    "@nomicfoundation/hardhat-ethers":   "^3.0.0",
+    "hardhat":                           "^2.22.0",
+    "typescript":                        "^5.0.0",
+    "ethers":                            "^6.0.0",
+    "hardhat-gas-reporter":              "^1.0.9"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts":           "^5.0.0"
+  }
+}
