@@ -54,11 +54,11 @@ Approved → EFT minted directly to user's wallet
 │                    EcoToken (EFT)                           │
 │  ERC-20 · AccessControl · Pausable                          │
 │                                                             │
-│  ┌─────────────────┐  ┌──────────────────┐                 │
-│  │   mint()        │  │  stake()         │                 │
-│  │  DISTRIBUTOR    │  │  unstake()       │                 │
-│  │  ROLE only      │  │  7-day lock      │                 │
-│  └─────────────────┘  └──────────────────┘                 │
+│  ┌─────────────────┐  ┌──────────────────┐                  │
+│  │   mint()        │  │  stake()         │                  │
+│  │  DISTRIBUTOR    │  │  unstake()       │                  │
+│  │  ROLE only      │  │  7-day lock      │                  │
+│  └─────────────────┘  └──────────────────┘                  │
 │                        governanceWeight(user)               │
 └────────────────────────────┬────────────────────────────────┘
                              │ DISTRIBUTOR_ROLE granted
@@ -67,7 +67,7 @@ Approved → EFT minted directly to user's wallet
 │                    EcoTracker                               │
 │  AccessControl · Pausable · ReentrancyGuard                 │
 │                                                             │
-│  logActivity(category, description, proofHash)             │
+│  logActivity(category, description, proofHash)              │
 │  castVote(activityId, approve)   quorum = 2                 │
 │  expireActivity(activityId)      3-day window               │
 │  setQuorum(n)                    admin only                 │
@@ -155,7 +155,7 @@ Approved → EFT minted directly to user's wallet
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/eco-friendly-blockchain.git
+git clone https://github.com/ShivamPatel8800/eco-friendly-blockchain.git
 cd eco-friendly-blockchain
 
 # Install dependencies
